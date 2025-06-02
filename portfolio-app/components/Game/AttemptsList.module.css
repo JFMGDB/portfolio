@@ -1,0 +1,117 @@
+.attemptsContainer {
+  margin-top: 2rem; 
+  padding: 1.5rem; 
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color); 
+}
+
+.attemptsTitle {
+  margin-bottom: 1rem; 
+  color: var(--text-primary-color); 
+  font-size: 1.3rem; 
+  text-align: left; 
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.noAttemptsMessage {
+  color: var(--text-secondary-color);
+  font-style: italic;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.attemptsList {
+  list-style: none;
+  padding: 0;
+  max-height: 300px; 
+  overflow-y: auto; 
+}
+
+.attemptItem {
+  padding: 0.75rem 0.5rem; 
+  border-bottom: 1px solid #f0f0f0; 
+  font-size: 1rem; 
+  color: var(--text-secondary-color);
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  transition: background-color var(--transition-speed) ease;
+}
+
+.attemptItem:hover {
+  background-color: var(--background-color); 
+}
+
+.attemptItem:last-child {
+  border-bottom: none;
+}
+
+.attemptNumber {
+  color: var(--text-primary-color);
+  font-weight: 500; 
+  margin-right: 0.5rem;
+}
+
+.attemptGuess {
+  font-family: var(--font-heading); 
+  font-size: 1.1em; 
+  letter-spacing: 0.1em;
+  color: var(--text-primary-color);
+  background-color: #e9ecef;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+}
+
+.attemptFeedback {
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.attemptFeedback span { 
+  margin-left: 0.75rem;
+}
+
+.attemptFeedback strong { 
+  color: var(--primary-color);
+}
+
+.attemptsList::-webkit-scrollbar {
+  width: 8px;
+}
+.attemptsList::-webkit-scrollbar-track {
+  background: var(--background-color);
+  border-radius: 10px;
+}
+.attemptsList::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 10px;
+}
+.attemptsList::-webkit-scrollbar-thumb:hover {
+  background: #AEAEB2; 
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .attemptsContainer {
+    padding: 1rem;
+  }
+  .attemptsTitle {
+    font-size: 1.15rem;
+  }
+  .attemptItem {
+    font-size: 0.9rem;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 0.3rem;
+  }
+  .attemptFeedback {
+    text-align: left;
+    width: 100%; 
+  }
+   .attemptFeedback span {
+    margin-left: 0;
+    margin-right: 0.75rem;
+  }
+}

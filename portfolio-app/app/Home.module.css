@@ -1,0 +1,97 @@
+/* app/Home.module.css */
+.hero {
+  padding: 4rem 1rem 5rem; /* Mais padding vertical */
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #0052D4 100%); /* Gradiente */
+  color: var(--text-on-primary-color);
+  border-radius: 0 0 var(--border-radius) var(--border-radius); /* Arredondar apenas cantos inferiores */
+  margin: -2.5rem -1.5rem 3rem -1.5rem; /* Esticar para as bordas e compensar padding do container */
+  position: relative; /* Para futuros elementos de design */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin: -2rem -1rem 3rem -1rem;
+    padding: 3rem 1rem 4rem;
+  }
+}
+
+
+.hero h1 {
+  font-size: 3rem; /* Maior */
+  color: var(--text-on-primary-color);
+  margin-bottom: 0.5rem;
+  font-weight: bold; /* Aldrich já é bold, mas para garantir */
+}
+
+.heroTitleSecondary { /* Para "Desenvolvedor Back-end" */
+  font-family: var(--font-main); /* Poppins para o subtítulo */
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButtons button {
+  margin: 0.5rem;
+  padding: 0.9rem 2rem;
+  font-size: 1.05rem;
+  background-color: var(--surface-color); /* Botões brancos no hero */
+  color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.ctaButtons button:hover {
+  background-color: #f0f0f0;
+  color: #0052D4;
+  transform: translateY(-3px) scale(1.03);
+}
+
+/* Aplicando a classe .card definida em globals.css */
+.skillsOverview,
+.featuredProject {
+  composes: card; /* Herda estilos da classe .card global */
+  margin-bottom: 2.5rem;
+  padding: 2rem 1.5rem;
+}
+
+.skillsOverview h2,
+.featuredProject h2 {
+  text-align: left; /* Alinhar títulos das seções à esquerda */
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  display: inline-block; /* Para a borda não ocupar toda a largura */
+}
+
+.skillsOverview p {
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--text-secondary-color);
+}
+
+.projectPreview {
+  /* Estilos podem ser mais contidos aqui se .featuredProject já é um card */
+}
+
+.projectPreview h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.projectPreview a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}

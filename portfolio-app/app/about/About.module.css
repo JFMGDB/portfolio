@@ -1,0 +1,105 @@
+.pageTitle {
+  text-align: left; 
+  font-size: 2.8rem; 
+  margin-bottom: 1rem; 
+}
+
+.contactInfo { 
+  font-size: 0.95rem;
+  color: var(--text-secondary-color);
+  margin-top: -0.5rem; 
+  margin-bottom: 2.5rem;
+}
+
+.contactInfo a {
+  margin: 0 0.25rem;
+}
+
+.section {
+  composes: card from global; 
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary-color); 
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+.section h3 { 
+  font-size: 1.3rem;
+  font-family: var(--font-main);
+  font-weight: 500;
+  color: var(--text-primary-color);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 0.75rem;
+}
+
+.skillsList li {
+  background-color: var(--background-color); 
+  color: var(--text-secondary-color);
+  padding: 0.5rem 1rem; 
+  border: 1px solid var(--border-color);
+  border-radius: 20px; 
+  font-size: 0.9rem;
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+.skillsList li:hover {
+  background-color: var(--primary-color);
+  color: var(--text-on-primary-color);
+  border-color: var(--primary-color);
+}
+
+.portfolioTechList {
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+.portfolioTechList li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative; 
+  color: var(--text-secondary-color);
+}
+
+.portfolioTechList li::before { 
+  content: '✓';
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.portfolioTechList strong {
+  color: var(--text-primary-color);
+  font-weight: 500; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .contactInfo {
+    text-align: center;
+  }
+  .section {
+    padding: 1.5rem;
+  }
+  .skillsList {
+    justify-content: center;
+  }
+}

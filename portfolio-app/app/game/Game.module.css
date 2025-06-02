@@ -1,0 +1,113 @@
+.gameContainer {
+  max-width: 550px; 
+  margin: 2rem auto; 
+  padding: 2rem 2.5rem; 
+  background-color: var(--surface-color); 
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 2.2rem;
+  color: var(--text-primary-color);
+  margin-bottom: 1.5rem; 
+}
+
+.gameMessage {
+  font-size: 1.05rem; 
+  color: var(--text-primary-color); 
+  margin-bottom: 2rem; 
+  min-height: 45px;
+  background-color: var(--background-color); 
+  padding: 0.75rem 1rem;
+  border-left: 4px solid var(--secondary-color); 
+  border-radius: 8px; 
+  text-align: left; 
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.inputArea {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 1rem; 
+}
+
+.inputArea input[type="text"] {
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1.5rem; 
+  text-align: center;
+  width: 220px; 
+  letter-spacing: 0.3em; 
+  font-family: var(--font-heading); 
+}
+
+.inputArea input[type="text"]:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb, 0, 122, 255), 0.25); 
+}
+
+.inputArea button { 
+  width: 220px; 
+}
+
+
+.controlsArea {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; 
+}
+
+.controlsArea button {
+  padding: 0.7rem 1.4rem; 
+  font-size: 0.9rem; 
+  min-width: 130px; 
+}
+
+.revealButton {
+  background-color: var(--secondary-color);
+  color: var(--text-on-primary-color); 
+}
+.revealButton:hover {
+  background-color: #E08E00; 
+}
+
+.newGameButton {
+ background-color: var(--primary-color); 
+}
+.newGameButton:hover {
+ background-color: #0062CC;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .gameContainer {
+    padding: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .pageTitle {
+    font-size: 1.8rem;
+  }
+  .gameMessage {
+    font-size: 1rem;
+  }
+  .inputArea input[type="text"],
+  .inputArea button {
+    width: 100%; 
+    font-size: 1.3rem;
+  }
+  .controlsArea {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .controlsArea button {
+    width: 100%;
+  }
+}

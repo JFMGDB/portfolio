@@ -1,0 +1,103 @@
+.pageTitle {
+  text-align: left;
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-primary-color);
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: var(--text-primary-color);
+  margin-bottom: 2rem; 
+  padding-bottom: 0.75rem; 
+  border-bottom: 3px solid var(--primary-color); 
+  display: inline-block;
+}
+
+.experienceItem {
+  composes: card from global; 
+  margin-bottom: 2rem;
+  padding: 2rem; 
+}
+
+.itemTitle {
+  font-size: 1.6rem; 
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin-bottom: 0.35rem;
+}
+
+.itemCompany {
+  font-size: 1.1rem;
+  font-family: var(--font-main);
+  font-style: normal; 
+  font-weight: 500; 
+  color: var(--text-primary-color);
+  margin-bottom: 0.35rem;
+}
+
+.itemDuration {
+  font-size: 0.95rem; 
+  color: var(--text-secondary-color);
+  margin-bottom: 1.25rem;
+  display: block; 
+}
+
+.itemDescriptionList {
+  list-style-type: none; 
+  padding-left: 0;
+  color: var(--text-secondary-color);
+}
+
+.itemDescriptionList li {
+  margin-bottom: 0.6rem;
+  line-height: 1.7; 
+  padding-left: 1.5rem; 
+  position: relative;
+}
+
+.itemDescriptionList li::before {
+  content: "▹"; 
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color); 
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.noExperience {
+  font-style: italic;
+  color: var(--text-secondary-color);
+  padding: 1rem;
+  background-color: var(--surface-color);
+  border-left: 3px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .sectionTitle {
+    font-size: 1.75rem;
+    width: 100%;
+    text-align: center;
+    border-bottom-width: 2px;
+  }
+  .experienceItem {
+    padding: 1.5rem;
+  }
+  .itemTitle {
+    font-size: 1.4rem;
+  }
+  .itemCompany {
+    font-size: 1rem;
+  }
+}
