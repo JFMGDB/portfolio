@@ -83,7 +83,7 @@ export default function GamePage() {
       setIsGameOver(true);
       setGameMessage(`Fim de Jogo! O código secreto era ${secretCode}. Mais sorte na próxima!`);
     } else {
-      setGameMessage(`${bulls} Touros (corretos no lugar certo), ${cows} Feridos (corretos no lugar errado). ${newRemainingAttempts} tentativas restantes.`);
+      setGameMessage(`${bulls} Touros (corretos no lugar certo), ${cows} Vacas (corretas no lugar errado). ${newRemainingAttempts} tentativas restantes.`);
     }
     setCurrentGuess('');
   };

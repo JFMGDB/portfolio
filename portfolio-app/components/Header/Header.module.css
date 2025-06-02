@@ -1,7 +1,7 @@
 .header {
-  background-color: var(--surface-color); 
+  background-color: var(--surface-color);
   color: var(--text-primary-color);
-  padding: 0 1.5rem; 
+  padding: 0 1.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +10,7 @@
   z-index: 1000;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -26,25 +26,23 @@
 .logo {
   font-family: var(--font-heading);
   font-size: 1.6rem;
-  font-weight: bold; 
+  font-weight: bold;
   color: var(--primary-color);
   text-decoration: none;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
-/* Responsividade para o Header */
 @media (max-width: 768px) {
   .header {
-    padding: 0 1rem; 
+    padding: 0 1rem;
   }
   .logo {
     font-size: 1.3rem;
   }
-
 }
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
   }
 }

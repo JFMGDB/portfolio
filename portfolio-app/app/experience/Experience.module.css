@@ -12,20 +12,18 @@
 .sectionTitle {
   font-size: 2rem;
   color: var(--text-primary-color);
-  margin-bottom: 2rem; 
-  padding-bottom: 0.75rem; 
-  border-bottom: 3px solid var(--primary-color); 
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--primary-color);
   display: inline-block;
 }
 
 .experienceItem {
-  composes: card from global; 
   margin-bottom: 2rem;
-  padding: 2rem; 
 }
 
 .itemTitle {
-  font-size: 1.6rem; 
+  font-size: 1.6rem;
   font-family: var(--font-heading);
   color: var(--primary-color);
   margin-bottom: 0.35rem;
@@ -34,37 +32,37 @@
 .itemCompany {
   font-size: 1.1rem;
   font-family: var(--font-main);
-  font-style: normal; 
-  font-weight: 500; 
+  font-style: normal;
+  font-weight: 500;
   color: var(--text-primary-color);
   margin-bottom: 0.35rem;
 }
 
 .itemDuration {
-  font-size: 0.95rem; 
+  font-size: 0.95rem;
   color: var(--text-secondary-color);
   margin-bottom: 1.25rem;
-  display: block; 
+  display: block;
 }
 
 .itemDescriptionList {
-  list-style-type: none; 
+  list-style-type: none;
   padding-left: 0;
   color: var(--text-secondary-color);
 }
 
 .itemDescriptionList li {
   margin-bottom: 0.6rem;
-  line-height: 1.7; 
-  padding-left: 1.5rem; 
+  line-height: 1.7;
+  padding-left: 1.5rem;
   position: relative;
 }
 
 .itemDescriptionList li::before {
-  content: "▹"; 
+  content: "▹";
   position: absolute;
   left: 0;
-  color: var(--secondary-color); 
+  color: var(--secondary-color);
   font-weight: bold;
   font-size: 1.2em;
   line-height: 1;
@@ -79,7 +77,6 @@
   border-radius: var(--border-radius);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .pageTitle {
     font-size: 2.2rem;
@@ -90,9 +87,6 @@
     width: 100%;
     text-align: center;
     border-bottom-width: 2px;
-  }
-  .experienceItem {
-    padding: 1.5rem;
   }
   .itemTitle {
     font-size: 1.4rem;

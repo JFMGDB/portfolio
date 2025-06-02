@@ -1,19 +1,18 @@
-import styles from './About.module.css'; 
+import styles from './About.module.css';
 
 export default function AboutPage() {
   const GITHUB_PROFILE_URL = "https://github.com/JFMGDB";
   const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/josé-felipe-morais/";
 
   return (
-
-    <div>
+    <div className="section-padding">
       <h1 className={styles.pageTitle}>Sobre Mim</h1>
       <div className={styles.contactInfo}>
         Recife, Brasil | <a href="mailto:fguerra127@gmail.com">fguerra127@gmail.com</a> | (81) 99939-0267 <br />
         <a href={GITHUB_PROFILE_URL} target="_blank" rel="noopener noreferrer">GitHub</a> | <a href={LINKEDIN_PROFILE_URL} target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
 
-      <section className={styles.section}>
+      <section className={`${styles.section} card`}>
         <h2>Minha Jornada</h2>
         <p>
           Desenvolvedor Back-end com um ano de experiência focada em Node.js. Profissional pró-ativo, ágil e altamente adaptável,
@@ -23,7 +22,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className={styles.section}>
+      <section className={`${styles.section} card`}>
         <h2>Competências Técnicas</h2>
         <h3>Tecnologias:</h3>
         <ul className={styles.skillsList}>
@@ -43,7 +42,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className={styles.section}>
+      <section className={`${styles.section} card`}>
         <h2>Idiomas</h2>
         <ul className={styles.skillsList}>
             <li>Português - Nativo</li>
@@ -51,7 +50,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className={styles.section}>
+      <section className={`${styles.section} card`}>
         <h2>Como Este Portfólio Foi Construído</h2>
         <p>Este portfólio foi desenvolvido utilizando um conjunto moderno de tecnologias para demonstrar minhas habilidades:</p>
         <ul className={styles.portfolioTechList}>

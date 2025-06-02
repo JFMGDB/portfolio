@@ -17,7 +17,7 @@ export default function AttemptsList({ attempts }) {
             </div>
             <div className={styles.attemptFeedback}>
               <span>Touros: <strong>{attempt.bulls}</strong></span>
-              <span>Feridos: <strong>{attempt.cows}</strong></span>
+              <span>Vacas: <strong>{attempt.cows}</strong></span>
             </div>
           </li>
         ))}

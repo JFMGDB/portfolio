@@ -1,11 +1,10 @@
 "use client";
 
 import Link from 'next/link';
-import styles from './Home.module.css'; 
+import styles from './Home.module.css';
 
 export default function HomePage() {
   return (
-    
     <div>
       <section className={styles.hero}>
         <h1>José Felipe M. G. de Barros</h1>
@@ -22,7 +21,7 @@ export default function HomePage() {
         </div>
       </section>
 
-       <section className={`${styles.featuredProject} section-padding`}> {/* Adicionando padding global */}
+      <section className={`${styles.featuredProject} card section-padding`}>
         <h2>Projeto em Destaque</h2>
         <div className={styles.projectPreview}>
           <h3>FBR Digital - Cadastro de Provedores</h3>

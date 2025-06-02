@@ -3,11 +3,11 @@
 import { useEffect, useState } from 'react';
 import { fetchGitHubRepos } from '@/services/githubService';
 import Link from 'next/link';
-import styles from './Projects.module.css'; // Importando o CSS Module
-import { ExternalLink, Github } from 'lucide-react'; // Ícones para os links
+import styles from './Projects.module.css'; 
+import { ExternalLink, Github } from 'lucide-react'; 
 
 const ProjectCard = ({ title, description, imageUrl, liveDemoUrl, sourceCodeUrl, technologies }) => (
-  <div className={`${styles.projectCard}`}> {/* Aplicando a classe card global e local */}
+  <div className={`${styles.projectCard} card`}> 
     {imageUrl && <img src={imageUrl} alt={title} className={styles.projectImage} />}
     <div className={styles.projectContent}>
       <h3>{title}</h3>
@@ -41,7 +41,7 @@ const ProjectCard = ({ title, description, imageUrl, liveDemoUrl, sourceCodeUrl,
 );
 
 const RepoItem = ({ repo }) => (
-  <li className={styles.repoItem}> {}
+  <li className={`${styles.repoItem} card`}>
     <h4>
       <Link href={repo.html_url} target="_blank" rel="noopener noreferrer">
         {repo.name}
@@ -108,7 +108,7 @@ export default function ProjectsPage() {
         {loading ? (
           <p className={styles.loadingText}>Carregando repositórios...</p>
         ) : repos.length > 0 ? (
-          <ul className={styles.repoGrid}> {/* Usando repoGrid para layout em grid */}
+          <ul className={styles.repoGrid}> 
             {repos.map((repo) => (
               <RepoItem key={repo.id} repo={repo} />
             ))}

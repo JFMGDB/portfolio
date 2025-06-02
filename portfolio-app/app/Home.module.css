@@ -1,12 +1,11 @@
-/* app/Home.module.css */
 .hero {
-  padding: 4rem 1rem 5rem; /* Mais padding vertical */
+  padding: 4rem 1rem 5rem;
   text-align: center;
-  background: linear-gradient(135deg, var(--primary-color) 0%, #0052D4 100%); /* Gradiente */
+  background: linear-gradient(135deg, var(--primary-color) 0%, #0052D4 100%);
   color: var(--text-on-primary-color);
-  border-radius: 0 0 var(--border-radius) var(--border-radius); /* Arredondar apenas cantos inferiores */
-  margin: -2.5rem -1.5rem 3rem -1.5rem; /* Esticar para as bordas e compensar padding do container */
-  position: relative; /* Para futuros elementos de design */
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  margin: -2.5rem -1.5rem 3rem -1.5rem;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -16,16 +15,15 @@
   }
 }
 
-
 .hero h1 {
-  font-size: 3rem; /* Maior */
+  font-size: 3rem;
   color: var(--text-on-primary-color);
   margin-bottom: 0.5rem;
-  font-weight: bold; /* Aldrich já é bold, mas para garantir */
+  font-weight: bold;
 }
 
-.heroTitleSecondary { /* Para "Desenvolvedor Back-end" */
-  font-family: var(--font-main); /* Poppins para o subtítulo */
+.heroTitleSecondary {
+  font-family: var(--font-main);
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 1.5rem;
@@ -45,7 +43,7 @@
   margin: 0.5rem;
   padding: 0.9rem 2rem;
   font-size: 1.05rem;
-  background-color: var(--surface-color); /* Botões brancos no hero */
+  background-color: var(--surface-color);
   color: var(--primary-color);
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
@@ -56,32 +54,17 @@
   transform: translateY(-3px) scale(1.03);
 }
 
-/* Aplicando a classe .card definida em globals.css */
-.skillsOverview,
 .featuredProject {
-  composes: card; /* Herda estilos da classe .card global */
   margin-bottom: 2.5rem;
-  padding: 2rem 1.5rem;
 }
 
-.skillsOverview h2,
 .featuredProject h2 {
-  text-align: left; /* Alinhar títulos das seções à esquerda */
+  text-align: left;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 0.5rem;
-  display: inline-block; /* Para a borda não ocupar toda a largura */
-}
-
-.skillsOverview p {
-  text-align: left;
-  font-size: 1.1rem;
-  color: var(--text-secondary-color);
-}
-
-.projectPreview {
-  /* Estilos podem ser mais contidos aqui se .featuredProject já é um card */
+  display: inline-block;
 }
 
 .projectPreview h3 {
